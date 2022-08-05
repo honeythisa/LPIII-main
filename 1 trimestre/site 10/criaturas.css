@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial;
+    background-color: #5e697a65;
+    background-image: url(imagens/criaturas.jpg);
+}
+nav ul a img {
+    width: 170px;
+    vertical-align: middle;
+    border-radius: 8px;
+    box-shadow: 1px 2px 13px rgba(255, 255, 255, 0.192);
+    padding: 5px;
+    margin: 8px;
+}
+nav ul {
+    text-align: center;
+    background-color: #161616;
+    box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.4);
+}
+nav ul li {
+    display: inline;
+    position: relative;
+    width: 100px;
+}
+nav ul li a {
+    color: white;
+    padding: 25px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.5s linear;
+    border: 0.1px solid transparent;
+}
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.301);
+    color: rgb(0, 0, 0);
+}
+/* sub-menu*/
+nav ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+    width: 143px;
+}
+nav ul li:hover ul {
+    display: block;
+}
+nav ul ul li a {
+    display: block;
+}
+#mobs {
+    font-size: 2em;
+    color: #ffffff;
+    margin: 1em auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.829);
+    max-width: 1100px;
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 0.6em;
+    text-align: justify;
+}
+#mobs img {
+    padding: 5px;
+    margin-left: 8em;
+}

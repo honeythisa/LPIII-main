@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+#page {
+    border: 2px solid #003cff;
+}
+
+.espaco {
+    clear: both;
+}
+
+.card {
+    background-color: #bdcfd9;
+    border-radius: 20px;
+    box-shadow: 1px 2px 23px rgb(247, 0, 255);
+    width: 15em;
+    padding: 1.2em;
+    margin: 2em;
+    float: left;
+}
+
+.card img {
+    
+    width: 15em;
+    height: 15em;
+}
+
+.espaco {
+    clear: both;
+}

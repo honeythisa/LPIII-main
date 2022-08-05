@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px; /* 1 em */
+}
+
+#paragrafos {
+    font-size: 50px;
+}
+
+.dobro {
+    font-size: 2em;
+}
+
+.triplo {
+    font-size: 3em;
+}
+
+#site {
+    border: 2px solid blue;
+    width: 100%;
+}
+
+.card {
+    border: 2px solid red;
+    width: 300px;
+    padding: 1em;
+    margin: 1.5em;
+    float: left;
+}
+
+.card img {
+    width: 100%;
+}
+
+/* espaço vazio após div que usam float: left|right */
+.espaco_vazio {
+    clear: both;
+}

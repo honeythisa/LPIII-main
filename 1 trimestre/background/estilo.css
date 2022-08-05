@@ -1,0 +1,52 @@
+/* background-color 
+   background-image: linear-gradient(red, yellow, blue, green, black);
+   background-image: linear-gradient(to right, bottom, red,yellow,green,pink)
+   background-image: radial-gradient(rgb(85, 122, 85), rgb(37, 40, 68))
+
+   imagens
+   background-image: url();
+   background-repeat:no-repeat ;
+   background-repeat:repeat-x or y ;
+   background-position:bottom center ;
+   background-size:50%;
+   */
+
+body {
+    /*
+    margin: 0; 
+    background-image: url(lobisomem.jpg);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: 600px;
+    */
+    background-image: url(circuloverder.jpg);
+    background-position: center center;
+    background-size: cover; 
+}
+
+
+#tela {
+    width: 100vw;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: rgba(85, 122, 85, 0.5);
+    padding: 1em 3em;
+    border-radius: 10px;
+    width: 50vw;
+    min-width: 400px;
+    max-width: 600px;
+    /*distancia em x, distancia em y, tamanh, cor*/
+    box-shadow: -10px 10px 20px darkslategray;
+
+}
+
+.box p {
+    font-size: 2em;
+    color: cornsilk;
+
+}

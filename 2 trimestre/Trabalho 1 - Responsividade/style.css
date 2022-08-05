@@ -1,0 +1,365 @@
+:root {
+    /* Variáveis */
+    --principal: #be9c79;
+    --black: #333333;
+    --white: #ffffff;
+    --light: #666666;
+}
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    background-color: rgb(245, 235, 169);
+}
+html {
+    font-size: 62.5%;
+}
+
+section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    position: sticky; /* fixado */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0,0, 0.1);
+}
+.header .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 1.5rem 2rem;
+}
+.header .flex .logo img {
+    height: 4.5rem;
+}
+.header .flex .navbar a {
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+.header .flex .navbar a:hover {
+    text-decoration: underline;
+    color: var(--principal);
+}
+#menu-btn {
+    font-size: 2.5rem;
+    color: var(--black);
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: var(--principal);
+    cursor: pointer; /* Como o mouse vai se comportar */
+    color: var(--white);
+    font-size: 1.8rem;
+    padding: 1rem 3rem; /* Vertical Horizontal */
+    flex-wrap: wrap;
+}
+.btn:hover {
+    background-color: var(--black);
+}
+.home-bg .home {
+    min-height: 70rem;
+    display: flex;
+    align-items: center; /* Vertical */
+}
+.home-bg img {
+    width: 100%;
+}
+.home-bg .home .content {
+    width: 50rem;
+    padding: 2em;
+    margin: 5em;
+}
+.home-bg .home .content h3 {
+    font-size: 2rem;
+    color: var(--black);
+}
+.home-bg .home .content p {
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: var(--black);
+    line-height: 2; /* altura da linha */
+}
+
+hr {
+    border-top: 1px dashed rgb(253, 231, 104);
+}
+.facility {
+    background-color: rgb(250, 222, 132);
+}
+.facility .box-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 5rem;
+    align-items: flex-start; /* alinhar no topo */
+}
+.facility .box-container .box {
+    text-align: center;
+}
+.facility .box-container .box img {
+    height: 14rem;
+    margin-bottom: 0.5rem;
+}
+.facility .heading h3 {
+    font-size: 2rem;
+    color: var(--black);
+    padding: 0.5rem;
+    text-align: center;
+}
+.facility .heading p {
+    font-size: 1.7rem;
+    color: var(--light);
+    padding: 4rem;
+    text-align: center;
+}
+.facility .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--black);
+    margin: 1rem 0;
+}
+.facility .box-container .box p {
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.newAct .box-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 5rem;
+    align-items: flex-start; /* alinhar no topo */
+}
+.newAct .heading h3 {
+    font-size: 2rem;
+    color: var(--black);
+    margin-bottom: 3rem;
+    text-align: left;
+}
+.newAct .heading p {
+    font-size: 1.7rem;
+    color: var(--light);
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.newAct .box-container .box {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.newAct .box-container .box img {
+    width: 50rem;
+    margin-bottom: 0.5rem;
+    max-width: 100%;
+}
+
+.newAct .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--black);
+    margin: 1rem;
+}
+
+.newAct .box-container .box p {
+    font-size: 1.5em;
+    color: var(--light);
+    line-height: 2;
+}
+
+.community {
+    display: flex;
+    align-items: center;
+    background-color: rgb(250, 222, 132);
+    max-width: 1200px;
+}
+
+.community .content {
+    width: 50rem;
+    text-align: center;
+}
+
+.community .content h3 {
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.community .content p {
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: var(--black);
+    line-height: 2; 
+}
+
+.community img {
+    width: 55rem;
+    max-width:100%;
+}
+
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1.5rem;
+    align-items: flex-start; /* alinhar no topo */
+}
+.menu .heading h3{
+    font-size: 2rem;
+    color: var(--black);
+    margin-bottom: 3rem;
+    text-align: left;
+
+}
+.menu .heading p {
+    font-size: 1.7rem;
+    color: var(--light);
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.menu .box-container .box {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.menu .box-container .box img {
+    width: 30rem;
+    margin-bottom: 0.5rem;
+    max-width: 100%;
+}
+
+.menu .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--black);
+    margin: 1rem;
+}
+
+.menu .box-container .box p {
+    font-size: 1.5em;
+    color: var(--light);
+    line-height: 2;
+}
+
+
+.newsletter {
+    min-height: 30rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(250, 222, 132);
+}
+
+.newsletter input {
+    width: 45rem;
+    height: 5rem;
+}
+
+.newsletter .heading {
+    text-align: left;
+    margin: 5rem;
+}
+
+.newsletter .heading p {
+    text-align: left;
+    padding: 1rem;
+    color: var(--light);
+}
+
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .facility .box-container {
+        grid-template-columns: auto auto;
+    }
+
+    .menu .box-container {
+        grid-template-columns: auto auto;
+    }
+
+    .gallery .box-container {
+        grid-template-columns: auto auto;
+    }
+
+    .community .box-container {
+        grid-template-columns: auto auto;
+    }
+
+    .footer .box-container {
+        grid-template-columns: auto auto;
+    }
+}
+@media (max-width: 700px) {
+
+    /* Menu */
+    /* Mostro o botaozinho de menu */
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    /* mudar o jeito de exibir os itens do menu */
+
+    .header .flex .navbar.active {
+        display: block;
+    }
+    
+    .home .content {
+        grid-template-columns: auto auto;
+    }
+
+    .menu .box-container {
+        grid-template-columns: auto auto;
+    }
+
+    .home-bg {
+        background-position: left;
+    }
+
+    .home-bg .home {
+        justify-content: center;
+    }
+
+    .home-bg .home .content h3 {
+        font-size: 4rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .heading img{
+        height: 3rem;
+    }
+
+    .heading h3{
+        font-size: 3rem;
+    }
+
+    .facility .box-container {
+        grid-template-columns: auto;
+    }
+
+    .menu .box-container {
+        grid-template-columns: auto;
+    }
+
+}

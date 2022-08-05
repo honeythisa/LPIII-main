@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+    CORES
+    Header - #202020
+    Main - #181818
+
+*/
+
+body {
+    background-color: #181818;
+    color: white;
+}
+
+#page {
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'videoGrid videoGrid listVideos';
+}
+
+.header {
+    background-color: #202020;
+    height: 56px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-area: header;
+    align-items: center;
+    padding-left: 10px;
+}
+
+#barraPesquisa {
+    border: 1px solid #888888;
+    padding: 5px;
+    color: #888888;
+    font-size: 17px;
+}
+
+#perfil {
+    text-align: end;
+    margin-right: 10px;
+}
+
+/* Coluna video */
+#columnVideo {
+    grid-area: videoGrid;
+    margin: 24px;
+    padding-left: 24px;
+    display: grid;
+    grid-template-areas: 
+    'videoPlayer' 
+    'tags' 
+    'videoTitle';
+    width: 810px;
+}
+
+.videoPlayer {
+    grid-area: videoPlayer;
+    width: 100%;
+}
+
+.infoVideo {
+    padding: 20px 0 12px;
+    width: 100%;
+    border-bottom: 1px solid #303030;
+}
+
+#videoTitle {
+    grid-area: videoTitle;
+    font-size: 22px;
+    padding-left: 1px;
+    font-weight: 400;
+    color: white;
+}
+
+#tags {
+    padding-top: 15px;
+    grid-area: tags;
+    font-size: 14px;
+    color: #3EA6FF;
+}
+
+#visuEdata {
+    color: #AAAAAA;
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+.descVideo {
+    display: grid;
+    padding-top: 10px;
+    grid-template-columns: 50px auto;
+    column-gap: 15px;
+    row-gap: 16px;
+    grid-template-areas: 
+    'imagem perfilDiv'
+    'imagem descText';
+}
+
+#imagemPerfil {
+    grid-area: imagem;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+#perfilDiv {
+    grid-area: perfilDiv;
+    display: grid;
+    grid-template-areas: 
+    'name'
+    'subscribers';
+}
+
+#name {
+    margin-top: 5px;
+    grid-area: name;
+    font-weight: bold;
+}
+
+#subscribers {
+    grid-area: subscribers;
+    color: #AAAAAA;
+}
+
+#descText {
+    grid-area: descText;
+    font-size: 17px;
+}
+
+/* Coluna lista de vídeos*/
+
+#columnList {
+    grid-area: listVideos;
+    width: 400px;
+    margin: 24px 24px 0px 0px;
+}
+
+.videoItem {
+    margin-top: 8px;
+    grid-area: videoGrid;
+    display: grid;
+    column-gap: 5px;
+    row-gap: 10px;
+    grid-template-areas: 
+    'thumbItem textItem';
+}
+
+.thumbItem {
+    grid-area: thumbItem;
+    width: 100%;
+}
+
+.textItem {
+    grid-area: textItem;
+}
+
+.textItem h4 {
+    word-wrap: break-word;
+}
+
+.textItem span {
+    color: #AAAAAA;
+    font-size: 15px;
+}

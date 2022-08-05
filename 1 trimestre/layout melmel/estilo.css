@@ -1,0 +1,53 @@
+#site {
+	display: grid;
+	grid-template-areas: 
+		"topo topo topo"
+		"menu menu menu"
+		"esquerda meio direita"
+		"rodape rodape rodape"
+	;
+	width: 1000px;
+	margin: o auto;
+}
+#site div {
+	text-align: center;
+	padding: 10px;
+
+}
+
+#topo {
+	background-color: #000000;
+	grid-area: topo;
+	height: 80px;
+}
+
+#menu {
+	background-color: #3D2C8D;
+	grid-area: menu;
+}
+
+#esquerda {
+	background-color: #150050;
+	grid-area: esquerda;
+	height: 500px;
+	width: 250px
+}
+
+#meio {
+	background-color: #3F0071;
+	grid-area: meio;
+	width: 550px;
+}
+
+#direita {
+	background-color: #610094;
+	grid-area: direita;
+	width: 200px;
+
+}
+
+#rodape {
+	background-color: #4B6587;
+	grid-area: rodape;
+	height: 50px;
+}

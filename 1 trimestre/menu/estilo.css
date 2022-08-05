@@ -1,0 +1,48 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@200&family=Hind:wght@300&family=Libre+Baskerville&family=Roboto+Condensed:wght@300&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#topo {
+    background-color: lightblue;
+    height: 100px;
+}
+
+#menu {
+    background-color: #5885AF;
+    text-align: center;
+}
+
+#menu a{
+    text-decoration: none; /*retirar o sublinhado*/
+    background-color: #88B2CC;
+    color:#E7F2F8;
+    margin: 1em 0.5em;
+    display: inline-block;
+    padding: 0.5em 2.5em; /* vertical horizontal */
+    font-family: 'Abel', sans-serif;
+    transition: all 0.5s linear; 
+}
+
+#menu a:hover{
+    background-color: #54627B;
+    border-radius: 0.5em;
+    color: bisque;
+}
+
+#foto img{
+    width: 400px;
+    transition: all 1s linear;
+    filter: contrast(0deg);
+}
+
+
+
+#foto img:hover {
+    filter: hue-rotate(180deg);
+}
+

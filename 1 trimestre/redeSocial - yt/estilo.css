@@ -1,0 +1,73 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+#site{
+	display: grid;
+	grid-template-areas:
+	"topo topo topo"
+	"meio meio direita"
+	"descricao descricao descricao"
+	"comentario comentario comentario"
+	;
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+#site div {
+	text-align: center;
+	padding: 10px;
+}
+
+#topo {
+	grid-area: topo;
+	height: 35px;
+	background-color: red;
+	
+
+}
+
+#meio {
+	grid-area: meio;
+	width: 1600px;
+	border: 2px solid #a6a6a6;
+	color: white;
+	background-color: black;
+
+
+}
+
+#direita {
+	grid-area: direita;
+	width: 400px;
+	background-color: #a6a6a6;
+	border: 2px solid;
+
+}
+
+.q {
+	border: 2px solid black;
+	padding-top: 50px;
+	margin: 30px;
+	height: 100px;
+	
+}
+
+#descricao {
+	grid-area: descricao;
+	background-color: rgba(179, 179, 179, 0.637);
+	height: 80px;
+	border: 2px solid;
+	
+}
+
+#comentario {
+	grid-area: comentario;
+	height: 90px;
+	background-color: white;
+	border: 2px solid;
+
+
+}
