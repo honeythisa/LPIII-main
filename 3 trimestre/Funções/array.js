@@ -79,6 +79,8 @@ print(lista.join('; '))
 usuarios.sort( (item1, item2) => item1.nome.localeCompare(item2.nome))
 usuarios.map( (item) => print(item.nome))
 
+print("Ab".localeCompare("Ac"))
+
 
 
 
